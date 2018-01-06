@@ -22,14 +22,13 @@ struct CalcultorModel {
     
     private var operations: Dictionary<String, Operation> = [
         "𝛑": Operation.constant(Double.pi),
-        "℮": Operation.constant(M_E),
         "√": Operation.unaryOperation(sqrt),
         "cos": Operation.unaryOperation(cos),
         "±": Operation.unaryOperation({ -$0 }),
-        "+": Operation.binaryOperation({ $0 + $1 }),
-        "-": Operation.binaryOperation({ $0 - $1 }),
-        "×": Operation.binaryOperation({ $0 * $1 }),
-        "÷": Operation.binaryOperation({ $0 / $1 }),
+        "+": Operation.binaryOperation(+),
+        "-": Operation.binaryOperation(-),
+        "×": Operation.binaryOperation(*),
+        "÷": Operation.binaryOperation(/),
         "=": Operation.equals,
         "C": Operation.clearOperation
     ]
