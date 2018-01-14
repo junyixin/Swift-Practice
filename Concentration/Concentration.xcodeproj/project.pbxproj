@@ -12,6 +12,8 @@
 		7759CF9B2008D2AF006D472B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7759CF992008D2AF006D472B /* Main.storyboard */; };
 		7759CF9D2008D2AF006D472B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7759CF9C2008D2AF006D472B /* Assets.xcassets */; };
 		7759CFA02008D2AF006D472B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7759CF9E2008D2AF006D472B /* LaunchScreen.storyboard */; };
+		7759CFA8200B2326006D472B /* LXConcentrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759CFA7200B2325006D472B /* LXConcentrationModel.swift */; };
+		7759CFAA200B6114006D472B /* LXCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759CFA9200B6114006D472B /* LXCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7759CF9C2008D2AF006D472B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7759CF9F2008D2AF006D472B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7759CFA12008D2AF006D472B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7759CFA7200B2325006D472B /* LXConcentrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXConcentrationModel.swift; sourceTree = "<group>"; };
+		7759CFA9200B6114006D472B /* LXCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				7759CF952008D2AF006D472B /* AppDelegate.swift */,
 				7759CF972008D2AF006D472B /* ViewController.swift */,
+				7759CFA7200B2325006D472B /* LXConcentrationModel.swift */,
+				7759CFA9200B6114006D472B /* LXCard.swift */,
 				7759CF992008D2AF006D472B /* Main.storyboard */,
 				7759CF9C2008D2AF006D472B /* Assets.xcassets */,
 				7759CF9E2008D2AF006D472B /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7759CF982008D2AF006D472B /* ViewController.swift in Sources */,
+				7759CFAA200B6114006D472B /* LXCard.swift in Sources */,
 				7759CF962008D2AF006D472B /* AppDelegate.swift in Sources */,
+				7759CFA8200B2326006D472B /* LXConcentrationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
