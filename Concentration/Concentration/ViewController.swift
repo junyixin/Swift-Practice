@@ -35,9 +35,13 @@ class ViewController: UIViewController {
     }
     
     func updateViewFromModel() {
+        var successArray = [Bool]()
+        
         for index in cardButtons.indices {
             let button = cardButtons[index]
             let card = game.cards[index]
+            
+            successArray.append(card.isMatched)
             
             if card.isFaceUp {
                 button.setTitle(emoji(for: card), for: .normal)
@@ -46,6 +50,11 @@ class ViewController: UIViewController {
                 button.setTitle("", for: .normal)
                 button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
             }
+        }
+        
+        // 判断游戏是否结束
+        if (!successArray.contains(false)) {
+            print("Game Over!!!!!!")
         }
     }
     

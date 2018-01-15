@@ -20,9 +20,13 @@ class LXConcentrationModel {
                 if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
+                    
+                    cards[matchIndex].isFaceUp = false
+                    cards[index].isFaceUp = false
+                } else {
+                    cards[index].isFaceUp = true
                 }
                 
-                cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = nil
             } else {
                 // 没有翻开的卡片或两张卡片不匹配
