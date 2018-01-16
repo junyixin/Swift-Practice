@@ -54,7 +54,10 @@ class ViewController: UIViewController {
         
         // 判断游戏是否结束
         if (!successArray.contains(false)) {
-            print("Game Over!!!!!!")
+            let alert = UIAlertController(title: "Tips", message: "Game Over!!!", preferredStyle: .alert)
+            let sureAction = UIAlertAction(title: "确定", style: .default, handler: nil)
+            alert.addAction(sureAction)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
